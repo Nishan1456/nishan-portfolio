@@ -1,0 +1,46 @@
+#contact {
+  height: 48vh;
+  width: 100%;
+}
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.contact-section {
+  display: flex;
+  height: 80px;
+  width: 530px;
+  border: 1px solid #7d7b7b;
+  border-radius: 19px;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.mail-section,
+.git-section {
+  display: flex;
+  gap: 7px;
+}
+.mail-section img,
+.git-section img {
+  height: 35px;
+  width: 35px;
+}
+.mail-section a,
+.git-section a {
+  text-decoration: none;
+  color: #000;
+  font-size: 19px;
+  position: relative;
+  top: 5px;
+  transition: all 0.3s ease-in;
+}
+.mail-section a:hover,
+.git-section a:hover {
+  opacity: 0.5;
+}
+.footer {
+  margin: 65px 0;
+}
