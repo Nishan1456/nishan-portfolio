@@ -2,9 +2,12 @@ import "./project.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import bloodbank from "../assets/bloodbank.jpg";
+import kanban from "../assets/kanban.png";
 import snake from "../assets/snake.jpg";
+import rock from "../assets/rock.png";
 import quiz from "../assets/quiz.jpg";
 import alarm from "../assets/alarm.jpg";
+import puzzle from "../assets/puzzle.png";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -17,18 +20,39 @@ const project = (props) => {
     {
       image: bloodbank,
       title: "Smart Blood Bank",
+      git: "#",
+      live: "#",
     },
     {
-      image: snake,
-      title: "Snake Game",
+      image: puzzle,
+      title: "Word Scramble",
+      git: "https://github.com/Nishan1456/Word-Puzzle",
+      live: "https://word-puzzle-seven.vercel.app/",
+    },
+
+    {
+      image: kanban,
+      title: "Kanban-Board",
+      git: "https://github.com/Nishan1456/kanban-board",
+      live: "https://kanban-board-chi-one.vercel.app/",
+    },
+    {
+      image: rock,
+      title: "Rock-Paper-Scissor",
+      git: "https://github.com/Nishan1456/Rock-Paper-Scissor",
+      live: "https://rock-paper-scissor-kappa-lyart.vercel.app/",
     },
     {
       image: quiz,
       title: "Quiz Game",
+      git: "#",
+      live: "#",
     },
     {
       image: alarm,
       title: "Alarm Clock",
+      git: "https://github.com/Nishan1456/Alarm-clock",
+      live: "https://alarm-clock-orcin-nu.vercel.app/",
     },
   ];
   return (
@@ -38,7 +62,7 @@ const project = (props) => {
       <div className="project-section">
         <Swiper
           spaceBetween={50}
-          slidesPerView={3}
+          slidesPerView={1}
           navigation
           pagination={{ clickable: true }}
           modules={[Navigation, Pagination]}
@@ -54,11 +78,15 @@ const project = (props) => {
               <h2>{slide.title}</h2>
               <div className="project-btns">
                 <button className="project-btn">
-                  <a href="#">GitHub</a>
+                  <a href={slide.git} target="_blank">
+                    GitHub
+                  </a>
                 </button>
 
                 <button className="project-btn">
-                  <a href="#">Live Demo</a>
+                  <a href={slide.live} target="_blank">
+                    Live Demo
+                  </a>
                 </button>
               </div>
             </SwiperSlide>

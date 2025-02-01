@@ -1,7 +1,7 @@
 import "./Experience.css";
 import verify from "../assets/verify.png";
-import arr from "../assets/downarr.png";
-const Experience = () => {
+
+const Experience = (props) => {
   function downward() {
     location.href = "./#project";
   }
@@ -156,7 +156,12 @@ const Experience = () => {
           <div className="col-2"></div>
         </div>
       </div>
-      <img src={arr} alt="Arrow icon" className="arrow" onClick={downward} />
+      <img
+        src={props.arr}
+        alt="Arrow icon"
+        className="arrow"
+        onClick={downward}
+      />
     </div>
   );
 };

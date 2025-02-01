@@ -10,3 +10,15 @@ body {
 html {
   scroll-behavior: smooth;
 }
+.app.light-mode {
+  background-color: #ffffff;
+  color: black !important;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode Styles */
+.app.dark-mode {
+  background-color: #67aae1;
+
+  transition: background-color 0.3s, color 0.3s;
+}

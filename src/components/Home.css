@@ -92,6 +92,20 @@ nav {
 .btns {
   margin: 18px 0;
 }
+.appli button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.appli button:hover {
+  background-color: #0056b3;
+}
 .download {
   background-color: #fff;
   transition: all 0.3s ease-in;
@@ -112,9 +126,15 @@ nav {
   height: 50px;
   width: 50px;
   margin: 0 4px;
+  transition: all 0.4s ease-in;
+}
+.logos img:hover {
+  position: relative;
+  bottom: 5px;
 }
 #hamburger-nav {
   display: none;
+  z-index: 2;
 }
 .hamburger-menu {
   position: relative;
@@ -181,7 +201,8 @@ nav {
 .hamburger-icon span:first-child {
   transform: none;
 }
-@media screen and (max-width: 1200px) {
+
+@media screen and (max-width: 1235px) {
   .desktop-nav {
     display: none;
   }
@@ -202,6 +223,7 @@ nav {
     top: 80px;
     height: 250px;
     width: 280px;
+
     border-radius: 50%;
   }
   .profile .introduce {
@@ -235,6 +257,9 @@ nav {
   #project {
     margin-top: 70vh;
   }
+  #project .swiper {
+    height: 400px;
+  }
   #project .projectImage {
     height: 100px;
     width: 100%;
@@ -248,7 +273,8 @@ nav {
     justify-content: center;
   }
 }
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 759px) {
   #experience {
     margin-top: 170px;
   }
@@ -257,7 +283,7 @@ nav {
     display: none;
   }
   #project {
-    margin-top: 206vh;
+    margin-top: 205vh;
     object-fit: cover;
   }
   #project .swiper-slide h2 {

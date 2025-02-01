@@ -2,7 +2,7 @@ import "./Contact.css";
 import linkedin from "../assets/linkedin.png";
 import mail from "../assets/mail.png";
 
-const Contact = () => {
+const Contact = (props) => {
   return (
     <div id="contact">
       <p>Get in Touch</p>
@@ -25,6 +25,15 @@ const Contact = () => {
             </a>
           </div>
         </div>
+      </div>
+      <div className="color-pallete">
+        <div className="red" onClick={() => props.toggleMode("red")}></div>
+        <div className="blue" onClick={() => props.toggleMode("blue")}></div>
+        <div
+          className="yellow"
+          onClick={() => props.toggleMode("yellow")}
+        ></div>
+        <div className="green" onClick={() => props.toggleMode("green")}></div>
       </div>
       <div className="footer">
         <p>Copyright &#169; 2024 NishanShrestha. All Rights Reserved</p>

@@ -1,5 +1,5 @@
 #contact {
-  height: 48vh;
+  height: 53vh;
   width: 100%;
 }
 .contact-container {
@@ -42,5 +42,32 @@
   opacity: 0.5;
 }
 .footer {
-  margin: 65px 0;
+  margin: 65px 0 0 0;
+}
+.color-pallete {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.red,
+.blue,
+.yellow,
+.green {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+.red {
+  background-color: red;
+}
+.yellow {
+  background-color: yellow;
+}
+.green {
+  background-color: green;
+}
+.blue {
+  background-color: blue;
 }

@@ -3,8 +3,8 @@ import photo from "../assets/nishan.jpg";
 import linkedin from "../assets/linkedin.png";
 import github from "../assets/github.png";
 import resume from "../assets/NishanShrestha_Resume.pdf";
-import arr from "../assets/downarr.png";
-const Home = () => {
+
+const Home = (props) => {
   const viewResume = () => {
     window.open(resume, "_blank");
   };
@@ -38,9 +38,20 @@ const Home = () => {
             <a href="#contact">Contact</a>
           </li>
         </ul>
+        <div className={`appli`}>
+          <button onClick={props.toggleTheme}>
+            {props.isDarkMode ? "Light Mode" : "Dark Mode"}
+          </button>
+        </div>
       </nav>
+
       <div id="hamburger-nav">
         <div className="logo">Nishan Shrestha</div>
+        <div className={`appli`}>
+          <button onClick={props.toggleTheme}>
+            {props.isDarkMode ? "Light Mode" : "Dark Mode"}
+          </button>
+        </div>
         <div className="hamburger-menu">
           <div className="hamburger-icon" onClick={toggleMenu}>
             <span></span>
@@ -101,7 +112,7 @@ const Home = () => {
         </div>
       </div>
       <img
-        src={arr}
+        src={props.arr}
         alt="Arrow icon"
         className="downarrow"
         onClick={downward}

@@ -2,9 +2,8 @@ import "./About.css";
 import aboutImage from "../assets/Nishan1.jpg";
 import certificate from "../assets/certificate.png";
 import education from "../assets/education.png";
-import arr from "../assets/downarr.png";
 
-const About = () => {
+const About = (props) => {
   function downward() {
     location.href = "./#experience";
   }
@@ -46,7 +45,12 @@ const About = () => {
           </div>
         </div>
       </div>
-      <img src={arr} alt="Arrow icon" className="arrow" onClick={downward} />
+      <img
+        src={props.arr}
+        alt="Arrow icon"
+        className="arrow"
+        onClick={downward}
+      />
     </div>
   );
 };
