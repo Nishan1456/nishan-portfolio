@@ -58,7 +58,7 @@ nav {
 
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 3s steps(12) forwards, blink 0.8s infinite;
+  animation: typing 2s steps(15) forwards, blink 0.8s infinite;
 }
 
 @keyframes typing {

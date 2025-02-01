@@ -3,9 +3,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import bloodbank from "../assets/bloodbank.jpg";
 import kanban from "../assets/kanban.png";
-import snake from "../assets/snake.jpg";
+
 import rock from "../assets/rock.png";
-import quiz from "../assets/quiz.jpg";
+import guess from "../assets/guess.png";
 import alarm from "../assets/alarm.jpg";
 import puzzle from "../assets/puzzle.png";
 import "swiper/css";
@@ -20,7 +20,7 @@ const project = (props) => {
     {
       image: bloodbank,
       title: "Smart Blood Bank",
-      git: "#",
+      git: "https://github.com/Nishan1456/Integrated-blood-bank",
       live: "#",
     },
     {
@@ -43,10 +43,10 @@ const project = (props) => {
       live: "https://rock-paper-scissor-kappa-lyart.vercel.app/",
     },
     {
-      image: quiz,
-      title: "Quiz Game",
-      git: "#",
-      live: "#",
+      image: guess,
+      title: "Word-Guess",
+      git: "https://github.com/Nishan1456/Word-guess",
+      live: "https://word-guess-ten.vercel.app/",
     },
     {
       image: alarm,
